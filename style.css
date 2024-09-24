@@ -1,17 +1,15 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   margin: 0;
+  background-color: #f4f4f4;
+  
 }
 .head {
-  position: relative;
-  text-align: center;
   background: linear-gradient(
     60deg,
     #080831 0%,
     #080831 100%
   );
-  color: white;
+  margin-bottom: 2em;
 }
 .waves {
   position: relative;
@@ -63,12 +61,9 @@ header{
   align-items: end;
 }
 #header-nome{
-  font-family: "pacifico",cursive;
   color: #fff;
-  font-size: 2em;
+  font-size: 40px;
   background-color: 1A1A4E;
-  border-radius: 10px;
-  margin-bottom: 1em;
   margin-left: 2vw;
 }
 .header-botao{
@@ -79,18 +74,93 @@ header{
   margin-left: 2vw;
 }
 .hearder-info{
-  font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 20px;
   color: #fff;
   margin-left: 2vw;
-  margin-bottom: 1em;
   margin-right: 2vw;
   text-decoration: none;
+  font-size: 25px;
+  margin-bottom:20px ;
 }
 .body-fundo{
   height: 65vh;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+.fa-brands{
+  display: flex;
+  flex-direction: row;
+  color: #ffffff; 
+  text-decoration: none;
+  font-size: 3em;
+  margin-right: 1em;
+}
+section{
+  padding: 2rem;
+  background-color: #080831;
+}
+.first-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  min-height: 700px;
+  
+}
+strong{
+  color: #f4f4f4;
+}
+h1{
+  font-size: 4rem;
+  letter-spacing: 2px;
+  color: white;
+  margin-left: 10vw;
+  width: 9em;
+  margin-bottom: 1em;
+
+
+}
+.first-section button{
+  width: 20px;
+}
+strong{
+  color:#87CEEB;
+}
+.box-img{
+  max-width: 450px;
+  padding: 1rem;
+}
+.img-profile{
+  width: 29em;
+  height: 30em;
+  border-radius: 100%;
+  margin-left:25vw ;
+  margin-bottom: 4em;
+}
+.btn-contato{
+  padding: 2%;
+  width: 6em;
+  color: black;
+  margin-left: 15vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  font-size: 23px;
+  text-decoration: none;
+  
+  
+}
+.text-body{
+    font-size: 29px;
+    width: 25em;
+    margin-left: 3em;
+    color: white;
+    margin-bottom: 3em;
+}
+.contatos{
+  background-color: #080831;
+  text-align: center;
+ 
 }
