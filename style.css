@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  background-color: #f4f4f4;
-  
+  background-color: white; 
 }
 .head {
   background: linear-gradient(
@@ -108,7 +107,6 @@ section{
   align-items: center;
   gap: 2rem;
   min-height: 700px;
-  
 }
 strong{
   color: #f4f4f4;
@@ -120,8 +118,6 @@ h1{
   margin-left: 10vw;
   width: 9em;
   margin-bottom: 1em;
-
-
 }
 .first-section button{
   width: 20px;
@@ -149,8 +145,6 @@ strong{
   border-radius: 40px;
   font-size: 23px;
   text-decoration: none;
-  
-  
 }
 .text-body{
     font-size: 29px;
@@ -162,5 +156,45 @@ strong{
 .contatos{
   background-color: #080831;
   text-align: center;
- 
+}
+#texto{
+  margin-left:35em ;
+  background-color: #87CEEB;
+  /*background-color: #fff;*/
+  text-align: justify;
+  width: 50em;
+  height: 15vw;
+  font-size: 22px;  
+}
+.titulo-body{
+ color:#000000;
+ font-size: 2em;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+#card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 45em;
+  margin-left: 30em;
+  height: 27em;
+  padding: 20px;
+  text-align: center;
+  background-color: #20343b;
+}
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70rem; 
+  height: 6rem;
+}
+.language{
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #87CEEB;
 }
