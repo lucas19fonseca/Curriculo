@@ -8,7 +8,7 @@ body {
     #080831 0%,
     #080831 100%
   );
-  margin-bottom: 2em;
+  margin-bottom: 6em;
 }
 .waves {
   position: relative;
@@ -54,16 +54,22 @@ body {
 }
 header{
   background-color:#080831;
-  height: 6vw;
+  height: 5vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: end;
+  position: fixed;
 }
-#header-nome{
+header p{
+  margin-top: 10px;
+}
+#lucas{
   color: #fff;
-  font-size: 40px;
-  background-color: 1A1A4E;
+  font-size: 2em;
   margin-left: 2vw;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .header-botao{
   display: flex;
@@ -80,7 +86,8 @@ header{
   margin-right: 2vw;
   text-decoration: none;
   font-size: 25px;
-  margin-bottom:20px ;
+  margin-bottom: 3px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .body-fundo{
   height: 65vh;
@@ -108,19 +115,12 @@ section{
   gap: 2rem;
   min-height: 700px;
 }
-strong{
-  color: #f4f4f4;
-}
 h1{
   font-size: 4rem;
   letter-spacing: 2px;
   color: white;
   margin-left: 10vw;
   width: 9em;
-  margin-bottom: 1em;
-}
-.first-section button{
-  width: 20px;
 }
 strong{
   color:#87CEEB;
@@ -133,8 +133,9 @@ strong{
   width: 29em;
   height: 30em;
   border-radius: 100%;
-  margin-left:25vw ;
+  margin-left:20vw ;
   margin-bottom: 4em;
+  margin-top: 4em;
 }
 .btn-contato{
   padding: 2%;
@@ -154,8 +155,8 @@ strong{
     margin-bottom: 3em;
 }
 .contatos{
-  background-color: #080831;
   text-align: center;
+  margin-top: 3em;
 }
 .titulo-body{
  color:#000000;
@@ -163,41 +164,6 @@ strong{
  display: flex;
  flex-direction: row;
  justify-content: center;
-}
-#card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 80em;
-  margin-left: 20em;
-  height: 27em;
-  padding: 20px;
-  background-color: #20343b;
-}
-.languages {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 1200px;
-  width: 90%;
-  height: 30em;
-  margin-left: 18em;
-}
-.language{
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
-  background-color: #87CEEB;
-  text-align: center; 
-  margin-right: 5em;
-}
-.language img{
-  width: 3rem;
-  height: 3rem;
 }
 .container {
   display: flex;
@@ -223,3 +189,76 @@ strong{
   line-height: 1.6;
   margin-bottom: 20px;
 }
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-left: 17em;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-basis: calc(100% / 6 - 30px); 
+  max-width: calc(100% / 6 - 30px);  
+}
+.tech-card img {
+  width: 48px;
+  height: 48px;
+}
+.tech-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+#titulo-tecnologias{
+  margin-top: 6em;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(8, 8, 8, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  flex-basis: calc(33.33% - 40pxpx);
+  margin-bottom: 20px;
+}
+.card img {
+  display: block; 
+  width: 50em;
+  height: 20em;
+  border-radius: 8px;
+  margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+  .card {
+      flex-basis: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      flex-basis: 200em;
+  }
+}
+
+
