@@ -232,22 +232,27 @@ strong{
 #titulo-tecnologias{
   margin-top: 6em;
 }
-.caixa{
-  text-align: center;
+.container-caixa {
+  margin-left: 2%;
+}
+.caixa {
+  margin-right: 2em;
   background-color: white;
-  width: 5%;
-  height: 5%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
 }
-.caixa img{
+.caixa img:houver{
+  background-color: #080831;
+}
+.caixa img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 60em;
+  width: 55em;
   height: 25em;
-  border: 1px solid rgb(121, 114, 114);
+  border-radius: 9px;
+
 }
-.card-contato{
+
+/*.card-contato{
   background-color: #636379;
   height: 30em;
   width: 60em;
