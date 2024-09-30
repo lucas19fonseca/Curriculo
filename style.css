@@ -115,7 +115,7 @@ section{
   justify-content: start;
   align-items: center;
   gap: 2rem;
-  min-height: 733px;
+  min-height: 52em;
 }
 h1{
   font-size: 4rem;
@@ -232,51 +232,47 @@ strong{
 #titulo-tecnologias{
   margin-top: 6em;
 }
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-}
-.card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(8, 8, 8, 0.1);
-  overflow: hidden;
-  padding: 20px;
+.caixa{
   text-align: center;
-  flex-basis: calc(33.33% - 40pxpx);
-  margin-bottom: 20px;
+  background-color: white;
+  width: 5%;
+  height: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
 }
-.card img {
-  display: block; 
-  width: 50em;
-  height: 20em;
-  border-radius: 8px;
-  margin: 0 auto; 
-}
-@media (max-width: 768px) {
-  .card {
-      flex-basis: calc(25% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-      flex-basis: 200em;
-  }
+.caixa img{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60em;
+  height: 25em;
+  border: 1px solid rgb(121, 114, 114);
 }
 .card-contato{
-  background-color: #080831;
+  background-color: #636379;
   height: 30em;
-  width: 80em;
-  margin-left: 15em;
+  width: 60em;
+  margin-left: 22em;
+  margin-bottom: 4em;
+  border-radius: 1em;
 }
 .btn-email{
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: start;
+  align-items: end;
+
   background-color: #a02828;
 }
-
+#btn-info{
+  margin-top: 2em;
+  margin-left: 8%;
+  background-color: #87CEEB;
+  height:3em ;
+  width:18em ;
+  text-align: center;
+}
+.contatos-info img{
+ width:2em;
+ height: 2em;
+ margin-top: 2px;
+}
