@@ -208,7 +208,10 @@ strong{
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-left: 17em;
 }
-
+#py{
+  width: 1px;
+  height: 1px;
+}
 .tech-card {
   display: flex;
   flex-direction: column;
