@@ -2,6 +2,9 @@ body {
   margin: 0;
   background-color: white; 
 }
+html{
+  scroll-behavior: smooth;
+}
 .head {
   background: linear-gradient(
     60deg,
@@ -62,6 +65,10 @@ header{
   justify-content: space-between;
   align-items: end;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Defina um número alto para garantir que esteja na frente */
+
 }
 header p{
   margin-top: 10px;
@@ -164,6 +171,7 @@ strong{
   text-align: center;
   margin-top: 3em;
   margin-right:2em;
+  margin-left: 2em;
 }
 .titulo-body{
  color:#000000;
@@ -240,90 +248,82 @@ strong{
 
 
 
-
-
-
-.card2 { 
-  width: 520px;  
-  height: 16em;  
-  background-color: #f9f9f9;
-  padding: 20px;
-  position: relative;
-  border-radius: 10px;
+.card-projeto {
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
-  margin: 5em 0;
-}
-
-.texto2 {
-  text-align: justify;
-  font-family: 'Arial', sans-serif;
-  font-weight: 500;
-  padding: 10px;
-}
-
-.card2:hover {
-  height: 33em;  
-}
-
-#card-image {
-  width: 560px;
-  max-height: 21em;  
-  border-radius: 10px;
-  position: absolute;
-  top: -40px;  
-  transition: all 0.3s ease-in-out;
-  position: absolute;
-
-}
-
-.card2:hover #card-image {
-  top: -130px;  
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.content2 {
-  width: 100%;
-  padding: 20px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.card2:hover .content2 {
-  opacity: 1;
-}
-
-.contact-houver img {
-  height: 2em;    /* Tamanho ajustado da imagem */
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
   display: inline-block;
-  vertical-align: middle;  /* Alinhamento vertical para ficar na mesma altura que o texto */
-}
-.github-button {
-  display: inline-flex;
-  align-items: center;
-  background-color: #24292e;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 17em;
+  margin-top: 3em;
 }
 
-.github-button img.github-icon {
-  width: 20px;
+.card-projeto:hover {
+  height: 468px;
+}
+
+.card-projeto .img-box-projeto {
+  border-radius: 20px;
+  position: absolute;
+  width: 33em;
+  height: auto;
+  top: 0px;
+  transition: 0.5s;
+}
+
+.card-projeto:hover .img-box-projeto {
+  border-radius: 20px;
+  top: -190px;
+  scale: 0.75;
+  width: 42em;
+}
+
+.card-projeto .img-box-projeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-projeto .content-projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  padding: 0px 30px;
+  text-align: center;
   height: 20px;
-  margin-right: 10px;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
-.github-button:hover {
-  background-color: #333;
+.card-projeto:hover .content-projeto {
+  top: 130px;
+  height: 20em;
+  padding: 1em;
+  width: 29em;
 }
 
+.card-projeto .read-more-projeto {
+ background: linear-gradient(90deg, #111016, #51227a);
+ padding: 12px;
+ color: #fff;
+ text-decoration: none;
+ border-radius: 8px;
+}
+#text-projeto{
+  font-family: "Noto Sans Cherokee", sans-serif ;
+  text-align: justify;
+  font-size: 1em;
+  font-weight: 400;
+}
 
 
 
