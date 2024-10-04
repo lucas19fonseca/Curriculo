@@ -2,9 +2,7 @@ body {
   margin: 0;
   background-color: white; 
 }
-html{
-  scroll-behavior: smooth;
-}
+
 .head {
   background: linear-gradient(
     60deg,
@@ -65,10 +63,7 @@ header{
   justify-content: space-between;
   align-items: end;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; /* Defina um número alto para garantir que esteja na frente */
-
+  z-index: 1000; 
 }
 header p{
   margin-top: 10px;
@@ -79,6 +74,12 @@ header p{
   margin-left: 2vw;
   margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.titulo-lucas a{
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 .header-botao{
   display: flex;
@@ -141,6 +142,7 @@ strong{
 .box-img{
   max-width: 450px;
   padding: 1rem;
+
 }
 .img-profile{
   width: 29em;
@@ -173,12 +175,16 @@ strong{
   margin-right:2em;
   margin-left: 2em;
 }
+.contatos a{
+  text-decoration: none;
+}
 .titulo-body{
  color:#000000;
  font-size: 2em;
  display: flex;
  flex-direction: row;
- justify-content: center;
+ justify-content: center; 
+ font-family: "Roboto", sans-serif; 
 }
 .container {
   display: flex;
@@ -216,10 +222,7 @@ strong{
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-left: 17em;
 }
-#py{
-  width: 1px;
-  height: 1px;
-}
+
 .tech-card {
   display: flex;
   flex-direction: column;
@@ -244,43 +247,46 @@ strong{
   margin-top: 6em;
 }
 
-
-
-
+.projetos-container {
+  display: flex;
+  justify-content: center; 
+  gap: 1000px; 
+  margin-right: ;
+}
 
 .card-projeto {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 500px;
   height: 300px;
-  position: relative;
+  position: absolute;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
-  display: inline-block;
-  margin-left: 17em;
-  margin-top: 3em;
+
 }
 
 .card-projeto:hover {
   height: 468px;
+  width: 38em;
 }
 
 .card-projeto .img-box-projeto {
   border-radius: 20px;
   position: absolute;
   width: 33em;
-  height: auto;
-  top: 0px;
+  height: 100%;
+  top: 0;
   transition: 0.5s;
 }
 
 .card-projeto:hover .img-box-projeto {
   border-radius: 20px;
-  top: -190px;
+  top: -220px; 
   scale: 0.75;
-  width: 42em;
+  width: 48em;
 }
 
 .card-projeto .img-box-projeto img {
@@ -295,74 +301,157 @@ strong{
   flex-direction: column;
   gap: 18px;
   position: absolute;
-  top: 250px;
+  top: 270px; 
   width: 100%;
   padding: 0px 30px;
   text-align: center;
-  height: 20px;
+  height: 20px; 
   overflow: hidden;
   transition: 0.5s;
 }
 
 .card-projeto:hover .content-projeto {
-  top: 130px;
-  height: 20em;
+  top: 150px; 
+  height: 20em; 
   padding: 1em;
   width: 29em;
 }
 
+
 .card-projeto .read-more-projeto {
- background: linear-gradient(90deg, #111016, #51227a);
- padding: 12px;
- color: #fff;
- text-decoration: none;
- border-radius: 8px;
+background: linear-gradient(90deg, #111016, #51227a);
+padding: 12px;
+color: #fff;
+font-size: 18px;
+text-decoration: none;
+border-radius: 8px;
+transition: transform 0.3s ease; 
 }
-#text-projeto{
-  font-family: "Noto Sans Cherokee", sans-serif ;
+
+.card-projeto .read-more-projeto:hover {
+transform: scale(1.9); 
+}
+
+.text-projeto {
+  font-family: "Noto Sans", sans-serif;
   text-align: justify;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.card-contato{
-  background-color: #636379;
-  height: 30em;
-  width: 60em;
-  margin-left: 22em;
-  margin-bottom: 4em;
-  border-radius: 1em;
+.card-projeto .content-projeto h2 {
+  margin-bottom: 1px; 
 }
-.btn-email{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-contato {
+  width: 86em;
+  max-width: 900em;
+  margin: 50px auto;
+  background-color: #080831;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding-right: 3em;
+
+}
+
+#titulo-contato {
+  color:#000000;
+ font-size: 2em;
+ display: flex;
+ flex-direction: row;
+ justify-content: center; 
+ font-family: "Roboto", sans-serif;
+
+}
+
+#form-contato {
+  margin-left: 47em;
+  width: 36em;
+  padding: 2em;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  height: 26em;
+}
+.input-contato{
+  margin-right: 2em;
+}
+#mensagem-contato{
+  font-family: "Roboto", sans-serif;
+  height: 11em;
+  resize: none;
+}
+.input-contato{
+  font-family: "Roboto", sans-serif;
+
+}
+
+.input-contato, .textarea-contato {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: end;
+  margin-top: 5px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 35em;
+  font-size: 16px;
+  margin-top: 1em;
+}
+.textarea-contato {
+  height: 120px;
+}
 
-  background-color: #a02828;
-}
-#btn-info{
+.button-contato {
+  padding: 9px;
   margin-top: 2em;
-  margin-left: 8%;
-  background-color: #87CEEB;
-  height:3em ;
-  width:18em ;
-  text-align: center;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 10em;
+  margin-left: 10em;
+  
 }
-.contatos-info img{
- width:2em;
- height: 2em;
- margin-top: 2px;
+
+#botao-contato {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #131413;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.8s ease; /* Transição suave */
 }
+
+#botao-contato:hover {
+  transform: scale(1.2); /* Cresce 20% ao passar o mouse */
+}
+
+#botao-contato:active {
+  transform: scale(0.9); /* Decresce 10% ao clicar */
+}
+
