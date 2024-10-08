@@ -115,16 +115,24 @@ html {
   margin: 0;
   padding: 0;
 }
-
-.fa-brands {
-  display: flex;
-  flex-direction: row;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 3em;
-  margin-right: 1em;
+.icones-sociais-1{
+  margin-left: 17em;
 }
 
+.icones-sociais-1 i {
+  font-size: 40px;
+  margin-right: 16px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icones-sociais-1 a {
+  text-decoration: none; 
+}
+
+.icones-sociais-1 i:hover {
+  transform: scale(1.1); 
+}
 section {
   padding: 2rem;
   background-color: #080831;
@@ -188,16 +196,7 @@ strong {
   margin-bottom: 2em;
 }
 
-.contatos {
-  text-align: center;
-  margin-top: 3em;
-  margin-right: 2em;
-  margin-left: 2em;
-}
 
-.contatos a {
-  text-decoration: none;
-}
 
 .titulo-body {
   color: #000000;
@@ -245,7 +244,7 @@ strong {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
-  margin-left: 17em;
+  margin-left: 20em;
 }
 
 .tech-card {
@@ -273,12 +272,6 @@ strong {
 
 #titulo-tecnologias {
   margin-top: 6em;
-}
-
-.projetos-container {
-  display: flex;
-  justify-content: center;
-  gap: 1000px;
 }
 
 .card-projeto {
@@ -368,55 +361,64 @@ strong {
   margin-bottom: 1px;
 }
 
+
+
+
+
+
+
+
+
+
+
 .contato-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  background-color: #080831; /* Cor de fundo escura */
+  background-color: #080831; 
   border-radius: 14px;
   max-width: 1200px;
   margin: 50px auto;
   color: white;
 }
-
 .contato-info h2 {
-  color: #ff5403; /* Cor do título */
-  margin-bottom: 20px; /* Espaço inferior */
+  color: #ff5403; 
   font-size: 2em;
+  margin-left: 5em;
 }
-
 .lista-info {
   list-style: none;
   padding: 0;
+  margin-bottom: 6em;
 }
-
 .lista-info li {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 23px;
+  margin-bottom: 1em;
 }
-
+.icones-sociais{
+  margin-left: 12em;
+}
 .icones-sociais i {
   font-size: 26px;
   margin-right: 13px;
   color: white;
-  transition: transform 0.3s ease-in-out; /* Animação suave no hover */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 2em;  
 }
-
 .icones-sociais a {
-  text-decoration: none; /* Remove sublinhado dos links */
+  text-decoration: none; 
 }
-
 .icones-sociais i:hover {
-  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+  transform: scale(1.1); 
 }
-
 .formulario-contato {
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 40%; /* Ajuste a largura do formulário */
+  width: 50%; 
 }
 
 .formulario-contato button {
@@ -429,11 +431,7 @@ strong {
   cursor: pointer;
   font-size: 18px;
   transition: transform 0.3s ease-in-out;
-}
-
-.formulario-contato button:hover {
-  background-color: #e04d02;
-  transform: scale(1.1); /* Aumenta o botão no hover */
+  margin-left: 8em;
 }
 
 .nome-email {
@@ -455,18 +453,64 @@ strong {
   border-radius: 4px;
   font-size: 16px;
 }
+.icones-sociais i {
+  font-size: 26px;
+  margin-right: 13px;
+  color: white;
+  transition: transform 0.3s ease-in-out; /* Animação suave no hover */
+}
 
-@media (max-width: 768px) {
-  .contato-container {
-    flex-direction: column;
-    padding: 20px;
-  }
+.icones-sociais a {
+  text-decoration: none; /* Remove sublinhado dos links */
+}
 
-  .formulario-contato {
-    width: 100%; /* Ajuste para dispositivos menores */
-  }
+.icones-sociais i:hover {
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
 
-  .icones-sociais {
-    margin: 20px 0;
-  }
+.formulario-contato {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 32em; /* Ajuste a largura do formulário */
+}
+
+.formulario-contato button {
+  margin-top: 1em;
+  padding: 10px 20px;
+  background-color: #ff5403;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.formulario-contato button:hover {
+  background-color: #e04d02;
+  transform: scale(1.1); 
+}
+
+.nome-email {
+  width: 31em;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mensagem {
+  width: 31em;
+  height: 9em;
+  resize: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
