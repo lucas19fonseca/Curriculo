@@ -65,16 +65,3 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Erro:', error);
       });
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
