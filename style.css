@@ -66,7 +66,10 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   position: fixed;
-  z-index: 1000;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Defina um número alto para garantir que esteja na frente */
+
 }
 
 header p {
@@ -80,16 +83,7 @@ header p {
   margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.titulo-lucas a {
-  text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.header-botao {
+.header-botao{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -152,6 +146,7 @@ strong {
 .box-img {
   max-width: 450px;
   padding: 1rem;
+
 }
 
 .img-profile {
@@ -180,29 +175,19 @@ strong {
   color: white;
   margin-bottom: 2em;
 }
-.titulo-body {
-  color: #000000;
-  font-size: 2em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
+.contatos{
+  text-align: center;
+  margin-top: 3em;
+  margin-right:2em;
+  margin-left: 2em;
 }
-.icones-sociais-1{
-  margin-left: 260px;
-  color:white;
-  font-size: 6em;
+.titulo-body{
+ color:#000000;
+ font-size: 2em;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
 }
-.icones-sociais-1 a{
-  text-decoration: none;
-}
-.icones-sociais-1 i {
-  font-size: 40px; 
-  margin-right: 13px;
-  color: white;
-  transition: transform 0.3s ease-in-out; 
-}
-
 .container {
   display: flex;
   align-items: center;
@@ -270,11 +255,9 @@ strong {
   margin-top: 6em;
 }
 
-.projetos-container {
-  display: flex;
-  justify-content: center;
-  gap: 1000px;
-}
+
+
+
 
 .card-projeto {
   display: flex;
@@ -287,6 +270,9 @@ strong {
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
+  display: inline-block;
+  margin-left: 17em;
+  margin-top: 3em;
 }
 
 .card-projeto:hover {
@@ -305,7 +291,7 @@ strong {
 
 .card-projeto:hover .img-box-projeto {
   border-radius: 20px;
-  top: -220px;
+  top: -190px;
   scale: 0.75;
   width: 48em;
 }
@@ -322,34 +308,29 @@ strong {
   flex-direction: column;
   gap: 18px;
   position: absolute;
-  top: 270px;
+  top: 250px;
   width: 100%;
   padding: 0px 30px;
   text-align: center;
-  height: 20px;
+  height: 20px; 
   overflow: hidden;
   transition: 0.5s;
 }
 
 .card-projeto:hover .content-projeto {
-  top: 150px;
+  top: 130px;
   height: 20em;
   padding: 1em;
   width: 29em;
 }
 
-.card-projeto .read-more-projeto {
-  background: linear-gradient(90deg, #111016, #51227a);
-  padding: 12px;
-  color: #fff;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
 
-.card-projeto .read-more-projeto:hover {
-  transform: scale(1.9);
+.card-projeto .read-more-projeto {
+ background: linear-gradient(90deg, #111016, #51227a);
+ padding: 12px;
+ color: #fff;
+ text-decoration: none;
+ border-radius: 8px;
 }
 
 .text-projeto {
@@ -359,193 +340,44 @@ strong {
   font-weight: 400;
 }
 
-.card-projeto .content-projeto h2 {
-  margin-bottom: 1px;
-}
 
-.contato-container {
+
+
+
+
+
+
+
+
+
+
+
+/*.card-contato{
+  background-color: #636379;
+  height: 30em;
+  width: 60em;
+  margin-left: 22em;
+  margin-bottom: 4em;
+  border-radius: 1em;
+}
+.btn-email{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  background-color: #080831;
-  border-radius: 14px;
-  max-width: 72vw;
-  height: 25em;
-  margin: 50px auto;
-  color: white;
-}
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
 
-.contato-info h2 {
-  color: #ff5403;
-  margin-left: 6em;
-  font-size: 2em;
+  background-color: #a02828;
 }
-
-.lista-info {
-  list-style: none;
-  margin-bottom: 11em;
-}
-
-.lista-info li {
-  margin: 10px 0;
-  font-size: 20px;
-  margin-top: 1em;
-
-}
-.icones-sociais i {
-  font-size: 26px;
-  margin-right: 13px;
-  color: white;
-  transition: transform 0.3s ease-in-out; 
-}
-.icones-sociais a{
-  text-decoration: none;
-}
-.icones-sociais i:hover {
-  transform: scale(1.1); 
-
-}
-.icones-sociais {
-  margin-top: 20px;
-  margin-left: 12em;
-  margin-bottom: 3em;
-}
-.formulario-contato {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 31vw;
-  height: 25em;
-}
-
-.formulario-contato button {
-  margin-left: 1em;
+#btn-info{
   margin-top: 2em;
-  padding: 10px;
-  background-color: #ff5403;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  transition: transform 0.3s ease-in-out; 
-  margin-left: 12em;
+  margin-left: 8%;
+  background-color: #87CEEB;
+  height:3em ;
+  width:18em ;
+  text-align: center;
 }
-.formulario-contato button:hover {
-  background-color: #e04d02;
-  transform: scale(1.1); 
-
-}
-.nome-email{
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-}
-.mensagem{
-  width: 95%;
-  height: 9em;
-  resize: none;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* Para telas pequenas, como smartphones (até 600px) */
-@media (max-width: 600px) {
-  .head {
-    margin-bottom: 3em;
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-left: 5vw;
-    width: 100%;
-  }
-
-  .img-profile {
-    width: 20em;
-    height: 20em;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .btn-contato {
-    width: 100%;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .projetos-container {
-    flex-direction: column;
-    gap: 1rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .card-projeto {
-    width: 90%;
-    height: auto;
-    position: relative;
-  }
-
-  .technologies {
-    margin-left: 0;
-    padding: 10px;
-  }
-
-  .tech-card {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .container {
-    flex-direction: column;
-    margin-left: 0;
-  }
-
-  .contato-container {
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 100%;
-    padding: 20px;
-  }
-
-  .formulario-contato {
-    width: 100%;
-  }
-}
-
-/* Para tablets (até 768px) */
-@media (max-width: 768px) {
-  .img-profile {
-    width: 25em;
-    height: 25em;
-  }
-
-  .btn-contato {
-    margin-left: 5vw;
-  }
-
-  .technologies {
-    margin-left: 5vw;
-  }
-
-  .card-projeto {
-    width: 70%;
-  }
-
-  .contato-container {
-    max-width: 90%;
-  }
-
-  .formulario-contato {
-    width: 80%;
-  }
+.contatos-info img{
+ width:2em;
+ height: 2em;
+ margin-top: 2px;
 }
